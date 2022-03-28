@@ -9,7 +9,9 @@ resource "aws_security_group" "sg" {
            to_port     = 80
            protocol    = "tcp"
            description = "http"
+    
         } 
+  
          ingress {  
            cidr_blocks = ["0.0.0.0/0"]
            from_port   = 443
