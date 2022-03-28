@@ -7,9 +7,12 @@ terraform {
   }
 }
 
+
+
 provider "aws" {
   region = var.region
 }
+
 
 module "compute" {
   source = "./modules/compute"
@@ -18,7 +21,7 @@ module "compute" {
 module "network" {
   source = "./modules/network"
 }
-\
+
 module "storage" {
   source = "./modules/storage"
 }
